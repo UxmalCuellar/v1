@@ -9,6 +9,7 @@
       <meta charset="UTF-8">
       <meta name="description" content="Personal Website">
       <meta name="keywords" content="Uxmal Cuellar">
+      <meta name="keywords" content="computer science">
       <meta name="author" content="Uxmal Cuellar">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <!-- FONT –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -19,14 +20,8 @@
       <link rel="stylesheet" href="/static/skeleton.css">
       <link rel="stylesheet" href="/static/main.css">
 
-      <!-- SCRIPT –––––––––––––––––––––––––––––––––––––––––––––––––– 
-      <script src="/static/script.js" charset=utf-8></script>-->
-      <script type="text/javascript">
-	 // toggle menu icon into an x 
-	 function toggleMenuIcon(x) {
-	    x.classList.toggle("change");
-	 }
-      </script>
+      <!-- SCRIPT –––––––––––––––––––––––––––––––––––––––––––––––––– --> 
+      <script src="/static/script.js" charset=utf-8></script>
 
       <!-- Favicon –––––––––––––––––––––––––––––––––––––––––––––––––– -->
       <link rel="icon" type="image/png" href="/static/images/favicon.png">
@@ -36,12 +31,12 @@
 	 <div class="bar1"></div>
 	 <div class="bar2"></div>
 	 <div class="bar3"></div>
+	 <div id="menu" class="dropdown-content">
+	    <a href="#about">About</a>
+	    <a href="#projects">Projects</a>
+	    <a href="#digitclass">Digit Classifier</a>
+	 </div>
       </div>
-      <ul id="toc" class="toc">
-	 <li class="toc-h1"><a href="#about">About</a></li>
-	 <li class="toc-h1"><a href="#projects">Projects</a></li>
-	 <li class="toc-h1"><a href="#digitclass">Digit Classifier</a></li>
-	 </ul>
       {% block content %} {% endblock %}
    </body>
 </html>

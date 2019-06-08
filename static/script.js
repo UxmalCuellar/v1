@@ -17,3 +17,15 @@ function toggleMenuIcon(x) {
 //       }
 //    }
 // }
+
+
+$(window).scroll(function() {
+   if ($(this).scrollTop()>0) {
+      $('.icons').fadeOut();
+   } else {
+      $('.icons').fadeIn();
+   }
+   if($(window).scrollTop() + $(window).height() == $(document).height()) {
+      $('.icons').fadeIn();
+   }
+});

@@ -23,10 +23,31 @@ img.icon:hover {
  * Navbar elements 
  */
 .navbar { 
-   background-color: red;
+   background-color: none;
    position: fixed;
    top: 0;
    width: 100%;
+}
+
+.bottombar {
+   position: fixed;
+   bottom: 0;
+   width: 100%;   
+   padding-bottom: 20px;
+}
+
+/* icons */
+.icons {
+   padding-right: 40px;
+}
+i {
+   padding: 10px ;
+   float: right;
+   color: black;
+}
+
+i:hover {
+   color: grey;
 }
 
 /* menu icon and animation */
@@ -44,6 +65,13 @@ img.icon:hover {
    margin: 6px 0;
    transition: 0.4s;
 }
+
+div:hover .bar1, 
+div:hover .bar2,
+div:hover .bar3 {
+   background-color: grey;
+}
+
 .change .bar1 {
   -webkit-transform: rotate(-45deg) translate(-9px, 6px);
   transform: rotate(-45deg) translate(-9px, 6px);

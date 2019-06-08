@@ -5,16 +5,15 @@ function toggleMenuIcon(x) {
 }
 
 // close dropdown menu if user clicks outside if it
-window.onclick = function(event) {
-   if (!event.target.matches('.toc-holder')) {
-      var dropdowns = document.getElementByClassName("dropdown-content");
-      var i;
-      for (i = 0; i < dropdowns.length; i++) {
-	 var openDropDown = dropdowns[i];
-	 if (openDropDown.classList.contains('show')) {
-	    alert("hey");
-	    openDropDown.classList.remove('show');
-	 }
-      }
-   }
-}
+// window.onclick = function(event) {
+//    if (!event.target.matches('.toc-holder')) {
+//       var dropdowns = document.getElementByClassName("dropdown-content");
+//       var i;
+//       for (i = 0; i < dropdowns.length; i++) {
+// 	 var openDropDown = dropdowns[i];
+// 	 if (openDropDown.classList.contains('show')) {
+// 	    openDropDown.classList.remove('show');
+// 	 }
+//       }
+//    }
+// }

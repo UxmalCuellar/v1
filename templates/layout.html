@@ -1,21 +1,24 @@
 <!DOCTYPE html>
 <html>
-   <head>
       {% if title %}
          <title>Uxmal Cuellar | {{ title }}</title>
       {% else %}
          <title>Uxmal Cuellar | Home</title>
       {% endif %}
+
       <meta charset="UTF-8">
       <meta name="description" content="Personal Website">
       <meta name="keywords" content="Uxmal Cuellar">
       <meta name="keywords" content="computer science">
       <meta name="author" content="Uxmal Cuellar">
       <meta name="viewport" content="width=device-width, initial-scale=1">
+
       <!-- FONT –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
       <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
-      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Eczar:700&display=swap" rel="stylesheet" type="text/css">
+
       <!-- CSS –––––––––––––––––––––––––––––––––––––––––––––––––– -->
       <link rel="stylesheet" href="/static/normalize.css">
       <link rel="stylesheet" href="/static/skeleton.css">
@@ -28,6 +31,7 @@
       <!-- Favicon –––––––––––––––––––––––––––––––––––––––––––––––––– -->
       <link rel="icon" type="image/png" href="/static/images/favicon.png">
    </head>
+
    <body>
       <div class="navbar">
 	 <div class="toc-holder" onclick="toggleMenuIcon(this)">
@@ -41,13 +45,15 @@
 	    </div>
 	 </div>
       </div>
-      <div class="bottombar">
-	 <div class="icons">
-	    <a href="https://github.com/UxmalCuellar" target="_blank"><i class="fab fa-github" style='font-size:24px'></i></a>
-	    <a href="https://au.linkedin.com/in/uxmal-cuellar-63824bab?trk=people-guest_profile-result-card_result-card_full-click" target="_blank"><i class="fab fa-linkedin" style='font-size:24px'></i></a>
-	    <a href="mailto:uxmal.c@gmail.com"><i class="material-icons" style='font-size:26px'>email</i></a>
-	 </div>
+      <div class="container">
+	 {% block content %} {% endblock %}
       </div>
-      {% block content %} {% endblock %}
+      <div class="footer">
+	    <div class="icons">
+	       <a href="https://github.com/UxmalCuellar" target="_blank"><i class="fab fa-github" style='font-size:24px'></i></a>
+	       <a href="https://au.linkedin.com/in/uxmal-cuellar-63824bab?trk=people-guest_profile-result-card_result-card_full-click" target="_blank"><i class="fab fa-linkedin" style='font-size:24px'></i></a>
+	       <a href="mailto:uxmal.c@gmail.com"><i class="material-icons" style='font-size:26px'>email</i></a>
+	    </div>
+      </div>
    </body>
 </html>

@@ -1,9 +1,17 @@
-.wsu-icon { 
-   background :none; 
+html, body {
+    min-height: 100% !important;
+    height: 100%;
 }
 
-.wsu-icon:hover { 
-   background: #42f462; 
+.title {
+   height: 100%;
+   text-align: center;
+}
+
+.center {
+}
+.icon {
+   border-radius: 100px;
 }
 
 img.icon {
@@ -24,12 +32,14 @@ img.icon:hover {
  */
 .navbar { 
    background-color: none;
+/*   position: absolute;*/
    position: fixed;
-   top: 0;
-   width: 100%;
+   top: 10px;
+   right: 20px;
+
 }
 
-.bottombar {
+.footer {
    position: fixed;
    bottom: 0;
    width: 100%;   
@@ -40,6 +50,7 @@ img.icon:hover {
 .icons {
    padding-right: 40px;
 }
+
 i {
    padding: 10px ;
    float: right;
@@ -87,7 +98,6 @@ div:hover .bar3 {
 /*
  * dropdown menu
  */
-
 .dropdown-content {
    display: none;
    position: absolute;
@@ -108,4 +118,4 @@ div:hover .bar3 {
    background-color: #ddd;
 }
 
-.dropdown-content.show {display: block;}
+.show {display: block;}

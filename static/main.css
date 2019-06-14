@@ -51,13 +51,13 @@ img.icon:hover {
    padding-right: 40px;
 }
 
-i {
+.footer i {
    padding: 10px ;
    float: right;
    color: black;
 }
 
-i:hover {
+.footer i:hover {
    color: grey;
 }
 

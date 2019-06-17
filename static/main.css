@@ -5,11 +5,27 @@ html, body {
 
 .title {
    height: 100%;
-   text-align: center;
 }
 
 .center {
+   text-align: center;
+   margin: 0;
+   position: absolute;
+   top: 30%;
+   left: 50%;
+   margin-right: -50%;
+   transform: translate(-50%, -50%)
 }
+
+.center h1 {
+   font-family: 'Rubik', sans-serif;
+   font-size: 80px;
+   font-style: normal;
+   font-weight: normal;
+   -moz-osx-font-smoothing: grayscale;
+   -webkit-font-smoothing: antialiased;
+}
+
 .icon {
    border-radius: 100px;
 }

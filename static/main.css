@@ -43,18 +43,6 @@ img.icon:hover {
    filter: grayscale(0%);
 }
 
-/*
- * Navbar elements 
- */
-.navbar { 
-   background-color: none;
-/*   position: absolute;*/
-   position: fixed;
-   top: 10px;
-   right: 20px;
-
-}
-
 .footer {
    position: fixed;
    bottom: 0;
@@ -76,13 +64,31 @@ img.icon:hover {
 .footer i:hover {
    color: grey;
 }
+/* navbar */
+.navbar { 
+   position: fixed;
+   width: 100%;
+}
+.goto-top {
+   float: left;
+   display: inline-block;
+   line-height: 15px;
+   padding-left: 20px;
+   padding-top: 20px;
+}
 
+.goto-top p {
+   border-left: 2px solid black;
+   padding: 4px;
+   cursor: pointer;
+}
 /* menu icon and animation */
 .toc-holder { 
    display: inline-block;
    cursor: pointer;
    float: right;
    padding-right: 20px;
+   padding-top: 20px;
 }
 
 .bar1, .bar2, .bar3 {
@@ -92,13 +98,13 @@ img.icon:hover {
    margin: 6px 0;
    transition: 0.4s;
 }
-
+/*
 div:hover .bar1, 
 div:hover .bar2,
 div:hover .bar3 {
    background-color: grey;
 }
-
+*/
 .change .bar1 {
   -webkit-transform: rotate(-45deg) translate(-9px, 6px);
   transform: rotate(-45deg) translate(-9px, 6px);

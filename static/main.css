@@ -222,7 +222,8 @@ div:hover .bar3 {
   animation-direction: normal, alternate;
 }
 
-
-
-
-
+#aboutme {
+   font-size: 50px;
+   font-family: 'Rubik', sans-serif;
+   line-height: 60px;
+}

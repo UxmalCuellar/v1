@@ -143,8 +143,7 @@ div:hover .bar3 {
 .show {display: block;}
 
 
-
-
+/* Copyright 2017 Ian Lunn Design Limited */
 
 /* Bob */
 @-webkit-keyframes hvr-bob {
@@ -222,8 +221,10 @@ div:hover .bar3 {
   animation-direction: normal, alternate;
 }
 
+/* END hvr-bob */
+
 #aboutme {
    font-size: 50px;
    font-family: 'Rubik', sans-serif;
-   line-height: 60px;
+   line-height: 57px;
 }

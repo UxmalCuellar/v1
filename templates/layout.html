@@ -17,25 +17,28 @@
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
       <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
-      <link href="https://fonts.googleapis.com/css?family=Eczar:700&display=swap" rel="stylesheet" type="text/css">
-      <link href="https://fonts.googleapis.com/css?family=Patua+One&display=swap" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
+
       <!-- CSS –––––––––––––––––––––––––––––––––––––––––––––––––– -->
       <link rel="stylesheet" href="/static/normalize.css">
       <link rel="stylesheet" href="/static/skeleton.css">
       <link rel="stylesheet" href="/static/main.css">
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
       <!-- SCRIPT –––––––––––––––––––––––––––––––––––––––––––––––––– --> 
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
       <script src="/static/script.js" charset=utf-8></script>
-
-      <!-- Favicon –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-      <link rel="icon" type="image/png" href="/static/images/favicon.png">
+      <!-- <script src="/static/aos-scripts.js" charset=utf-8></script> -->
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
    </head>
 
    <body>
+      <!-- Navbar –––––––––––––––––––––––––––––––––––––––––––––––––– -->
       <div class="navbar">
-	 <div class="goto-top">
+	 <div class="goto-top"
+	    data-aos="fade-right"
+	    data-aos-anchor="#trigger-left"
+	    data-aos-anchor-placement="bottom-bottom">
 	    <p>UXMAL<br><b>CUELLAR</b></p>
 	 </div>
 	 <div class="toc-holder" onclick="toggleMenuIcon(this)">
@@ -49,9 +52,11 @@
 	    </div>
 	 </div>
       </div>
+      <!-- Content –––––––––––––––––––––––––––––––––––––––––––––––––– -->
       <div class="container">
 	 {% block content %} {% endblock %}
       </div>
+      <!-- Footer –––––––––––––––––––––––––––––––––––––––––––––––––– -->
       <div class="footer">
 	    <div class="icons">
 	       <a href="https://github.com/UxmalCuellar" class="hvr-bob" target="_blank"><i class="fab fa-github" style='font-size:24px'></i></a>
@@ -59,5 +64,11 @@
 	       <a href="mailto:uxmal.c@gmail.com" class="hvr-bob"><i class="material-icons" style='font-size:26px'>email</i></a>
 	    </div>
       </div>
+      <script>
+	 AOS.init({
+	    duration: 1200,
+	    easing: 'ease-in-out-back'
+	 });
+      </script>
    </body>
 </html>

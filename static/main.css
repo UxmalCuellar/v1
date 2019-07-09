@@ -26,49 +26,12 @@ html, body {
    -webkit-font-smoothing: antialiased;
 }
 
-.icon {
-   border-radius: 100px;
-}
-
-img.icon {
-   background: yellow;
-   opacity: 0.8;
-   filter: grayscale(100%);
-   filter: gray;
-}
-
-img.icon:hover {
-   background: pink;
-   filter: none;
-   filter: grayscale(0%);
-}
-
-.footer {
-   position: fixed;
-   bottom: 0;
-   width: 100%;   
-   padding-bottom: 20px;
-}
-
-/* icons */
-.icons {
-   padding-right: 40px;
-}
-
-.footer a {
-   padding: 10px ;
-   float: right;
-   color: black;
-}
-
-.footer a:hover {
-   color: grey;
-}
 /* navbar */
 .navbar { 
    position: fixed;
    width: 100%;
 }
+
 .goto-top {
    float: left;
    display: inline-block;
@@ -82,6 +45,30 @@ img.icon:hover {
    padding: 4px;
    cursor: pointer;
 }
+
+/* icons and footer */
+.footer {
+   position: fixed;
+   bottom: 0;
+   width: 100%;   
+   padding-bottom: 20px;
+}
+
+.footer a {
+   padding: 10px ;
+   float: right;
+   color: black;
+}
+
+.footer a:hover {
+   color: grey;
+}
+
+/* icons */
+.icons {
+   padding-right: 40px;
+}
+
 /* menu icon and animation */
 .toc-holder { 
    display: inline-block;
@@ -223,8 +210,47 @@ div:hover .bar3 {
 
 /* END hvr-bob */
 
+/* About */
+#about { 
+  height: 60%; 
+}
+
 #aboutme {
    font-size: 50px;
    font-family: 'Rubik', sans-serif;
    line-height: 57px;
+}
+/* Eduction */
+#wsu_logo, #billyblue {
+   border-radius: 50% ;
+   width: 90px;
+   height: 90px;
+   background-size: cover;
+   opacity: 0.8;
+   filter: grayscale(100%);
+   filter: gray;
+}
+
+#education {
+   text-align: center;
+   height: 50%;
+}
+
+.edu_logo {
+   margin-left: auto;
+   margin-right: auto;
+   display: block;
+}
+
+#wsu_logo {
+   background-image: url("/static/images/WSU_logo.png");
+}
+
+#billyblue {
+   background-image: url("/static/images/billyblue_logo.jpg");
+}
+
+#wsu_logo:hover, #billyblue:hover {
+   filter: none;
+   filter: grayscale(0%);
 }

@@ -8,7 +8,7 @@ html, body {
    height: 100%;
 }
 
-.center {
+.name-title {
    text-align: center;
    margin: 0;
    position: absolute;
@@ -19,7 +19,24 @@ html, body {
    font-family: 'Fjalla One', sans-serif;
 }
 
-.center h1 {
+.name-title:before { 
+   content: "";
+   position: absolute;
+   top: 0;
+   left: -135px;
+   width: 100px;
+   height: 100%;
+   background: rgba(255, 255, 255, 0.23);
+   transform: skewX(-30deg);
+   transition: 0.5s;
+   z-index: 1;
+}
+
+.name-title:hover:before {
+   left: 105%;
+}
+
+.name-title h1 {
    color: #000000;
    text-shadow: 0px 1px 0px #00ff99, 1px 2px 0px #00ff99, 2px 3px 0px #00ff99, 3px 4px 0px #00ff99, 4px 5px 0px #00ff99, 5px 6px 0px #00ff99, 6px 7px 0px #00ff99;
    transform: skew(-10deg);
@@ -30,7 +47,7 @@ html, body {
    -webkit-font-smoothing: antialiased;
 }
 
-.center p {
+.name-title p {
    font-size: 20px;
    transform: skew(-10deg);
 }
@@ -261,10 +278,24 @@ div:hover .bar3 {
    -webkit-filter: grayscale(100%);
 }
 
+#btnCv {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding-top: 30px;
+   padding-bottom: 5px;
+}
+
 #download {
    border: 1px solid #00ff99;
-   color: #00ff99;
+   color: #00ff99; 
+   line-height: 1;
+   display: inline-block;
+   padding: 14px 16px;
+   border-radius: 5px;
+   text-decoration: none;
 }
+
 
 #download:hover{
    background: #00ff99;

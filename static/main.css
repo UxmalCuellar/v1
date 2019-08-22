@@ -1,5 +1,4 @@
 html, body {
-
     min-height: 100% !important;
     height: 100%;
 }
@@ -273,9 +272,58 @@ div:hover .bar3 {
    width: 90px;
    height: 90px;
    background-size: cover;
-   opacity: 0.8;
+   /*
+   opacity: 0.5;
    filter: grayscale(100%);
    -webkit-filter: grayscale(100%);
+
+*/
+}
+
+/*
+#wsu_logo:hover, #billyblue:hover {
+   filter: none;
+   filter: grayscale(0%);
+}
+*/
+.edu_logo {
+   margin-left: auto;
+   margin-right: auto;
+   display: block;
+}
+.color-overlay {
+   position: relative;
+}
+
+.color-overlay:before {
+   content: " ";
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   transition: all .3s linear;
+}
+
+.color-overlay:hover:before { 
+   background: none;
+ }
+
+.o1:before {
+   border-radius: 50% ;
+   background-color: rgba(179, 102, 255, 0.7);
+ }
+
+.o2:before {
+   background-color: rgba(0, 0, 255, 0.5);
+ }
+
+#wsu_logo {
+   background-image: url("/static/images/WSU_logo.png");
+}
+
+#billyblue {
+   background-image: url("/static/images/billyblue_logo.jpg");
 }
 
 #btnCv {
@@ -292,32 +340,12 @@ div:hover .bar3 {
    line-height: 1;
    display: inline-block;
    padding: 14px 16px;
-   border-radius: 5px;
+   border-radius: 7px;
    text-decoration: none;
+   transition: all .3s linear;
 }
 
-
-#download:hover{
+#download:hover {
    background: #00ff99;
    color: white;
 }
-
-#wsu_logo:hover, #billyblue:hover {
-   filter: none;
-   filter: grayscale(0%);
-}
-
-.edu_logo {
-   margin-left: auto;
-   margin-right: auto;
-   display: block;
-}
-
-#wsu_logo {
-   background-image: url("/static/images/WSU_logo.png");
-}
-
-#billyblue {
-   background-image: url("/static/images/billyblue_logo.jpg");
-}
-

@@ -72,4 +72,46 @@ $(document).ready(function(){
   });
 });
 
+/* email is copied to clipboard when clicked 
+
+
+var copyEmailBtn = document.querySelector(".copy-email");
+
+copyEmailBtn.addEventListener("click", function(event) {
+   copyToClipboard("uxmal.c@gmail.com");
+});
+
+function copyToClipboard(email) {
+   navigator.clipboard.writeText(email);
+}
+*/
+function copyEmail() {
+   var copytext = document.getElementById("copy-email").value;
+   copytext.select();
+   copytext.setSelectionRange(0, 20);
+   
+   document.execCommand("copy");
+
+   var tooltip = document.getElementById("emailToolTip");
+   tooltip.innerHTML = "COPIED TO CLIPBOARD";
+}
+
+function mouseOut() {
+   var tooltip = document.getElementById("emailToolTip");
+   tooltip.innerHTML = "CLICK TO COPY";
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

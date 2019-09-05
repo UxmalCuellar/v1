@@ -1,6 +1,7 @@
 html, body {
-    min-height: 100% !important;
-    height: 100%;
+   font-family: 'Rubik', sans-serif;
+   min-height: 100% !important;
+   height: 100%;
 }
 
 .title {
@@ -55,6 +56,7 @@ html, body {
 .navbar { 
    position: fixed;
    width: 100%;
+   z-index: 1;
 }
 
 .goto-top {
@@ -152,7 +154,7 @@ div:hover .bar3 {
 }
 
 .dropdown-content a:hover {
-   background-color: none;
+   background-color: transparent;
    border-left: 4px solid #00ff99;
 }
 
@@ -258,13 +260,15 @@ div:hover .bar3 {
    padding: 20px;
 }
 /* Eduction */
-.edu p {
-   text-align: center;
-}
 
 .edu .container  {
    padding-top: 50px;
    padding-bottom: 50px;
+}
+
+.edu p { 
+   padding-top: 30px;
+   text-align: center;
 }
 
 #wsu_logo, #billyblue {
@@ -291,6 +295,11 @@ div:hover .bar3 {
    margin-right: auto;
    display: block;
 }
+
+.edu_logo p {
+   color: #a4b8c4;
+}
+
 .color-overlay {
    position: relative;
 }
@@ -302,7 +311,7 @@ div:hover .bar3 {
    left: 0;
    right: 0;
    bottom: 0;
-   transition: all .3s linear;
+   transition: all .2s linear;
 }
 
 .color-overlay:hover:before { 
@@ -335,17 +344,71 @@ div:hover .bar3 {
 }
 
 #download {
+   /*
    border: 1px solid #00ff99;
-   color: #00ff99; 
+   */
+   border: 1px solid #a4b8c4;
+   color: #a4b8c4; 
    line-height: 1;
    display: inline-block;
    padding: 14px 16px;
    border-radius: 7px;
    text-decoration: none;
-   transition: all .3s linear;
+   transition: all .2s linear;
 }
 
 #download:hover {
+   border: 1px solid #ffffff;
    background: #00ff99;
    color: white;
+}
+
+.contact {
+   text-align: center;
+   font-family: 'Fjalla One', sans-serif;
+}
+
+.contact h1 {
+   font-size: 30px;
+}
+
+.contact button  {
+   font-family: 'Rubik', sans-serif;
+   border: none;
+   font-size: 40px;
+   font-weight: bold;
+   color: black;
+}
+
+.contact .toolTipText {
+  visibility: hidden;
+  width: 140px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -75px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.contact .toolTipText::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.contact::hover .toolTipText {
+  visibility: visible;
+  opacity: 1;
 }

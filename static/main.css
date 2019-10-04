@@ -365,21 +365,41 @@ div:hover .bar3 {
 
 .contact {
    text-align: center;
-   font-family: 'Fjalla One', sans-serif;
 }
 
 .contact h1 {
    font-size: 30px;
 }
 
+#myEmail {
+   opacity: 0;
+}
+
+
+.emailttp .copyToolTip {
+   display: none;
+   position: absolute;
+   background: #00ff99;
+   z-index: 1000;
+
+     margin-left: 28px;
+    padding: 10px;
+    width:200px;
+    height:100px;
+   
+}
+
+.emailttp:hover .copyToolTip {
+   display: block;
+}
+
 .contact button  {
-   font-family: 'Rubik', sans-serif;
    border: none;
    font-size: 40px;
    font-weight: bold;
    color: black;
 }
-
+/*
 .contact .toolTipText {
   visibility: hidden;
   width: 140px;
@@ -412,3 +432,4 @@ div:hover .bar3 {
   visibility: visible;
   opacity: 1;
 }
+*/

@@ -84,10 +84,25 @@
       <div class="sub-head">
 	 <h1><b>DO YOU WANT TO KNOW MORE?</b></h1>
       </div>
-      <button onclick="copyEmail()" onmouseout="mouseOut()" id="copy-email" value="uxmal.c@gmail.com">
-	 <span id="emailToolTip" class="toolTipText">CLICK TO COPY</span>UXMAL.C@GMAIL.COM</button>
-      
+      <span id="myEmail">uxmal.c@gmail.com</span></br>
+	       
+      <div class="emailttp">
+	 <button id="btnCopy">UXMAL.C@GMAIL.COM</button>
+	 <span class="copyToolTip">CLICK TO COPY</span>
+      </div>
    </div>
 </div>
-		  
+<script>
+
+   document.querySelector("#btnCopy").addEventListener('click', function() {
+   var copyText = document.querySelector('#myEmail');
+
+   var range = document.createRange();
+   range.selectNodeContents(copyText);
+   window.getSelection().addRange(range);
+
+   var sucess = document.execCommand('copy');
+   window.getSelection().removeRange(range);
+   });
+</script>
 {% endblock content %}

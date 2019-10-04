@@ -1,4 +1,5 @@
 /* 
+ *
  * Toggles menu icon into an x and show/hides menu items 
  */
 function toggleMenuIcon(x) {
@@ -72,46 +73,24 @@ $(document).ready(function(){
   });
 });
 
-/* email is copied to clipboard when clicked 
 
 
-var copyEmailBtn = document.querySelector(".copy-email");
+/*
+ * Click to copy tool tip cursor follow
+ */
 
-copyEmailBtn.addEventListener("click", function(event) {
-   copyToClipboard("uxmal.c@gmail.com");
-});
 
-function copyToClipboard(email) {
-   navigator.clipboard.writeText(email);
+var tooltip = document.querySelectorAll('.copyToolTip');
+
+document.addEventListener('mousemove', fn, false);
+
+function fn(e) {
+   for (var i = tooltip.length; i--;) {
+      tooltip[i].style.left = e.pageX + 'px';
+      tooltip[i].style.top = e.pageY + 'px';
+   }
 }
-*/
-function copyEmail() {
-   var copytext = document.getElementById("copy-email").value;
-   copytext.select();
-   copytext.setSelectionRange(0, 20);
-   
-   document.execCommand("copy");
-
-   var tooltip = document.getElementById("emailToolTip");
-   tooltip.innerHTML = "COPIED TO CLIPBOARD";
-}
-
-function mouseOut() {
-   var tooltip = document.getElementById("emailToolTip");
-   tooltip.innerHTML = "CLICK TO COPY";
-}
-
-
-
-
-
-
-
-
-
-
-
-
+      
 
 
 

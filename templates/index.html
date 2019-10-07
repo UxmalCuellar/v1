@@ -16,7 +16,7 @@
 	 <div class="one column">
 	 </div>
 	 <div class="eleven columns">
-	    <p style="background-color: #00ff99;"  id="aboutme"><i>I am a developer and I enjoy creating. I am interested and have worked with python, machine learning and building applications using frameworks like Electron.</i></p>
+	    <p style="background-color: #00ff99;"  id="aboutme"><i>I am a developer. I am interested and have worked with python, machine learning and building applications using frameworks like Electron.</i></p>
 	 </div>
       </div>
    </div>
@@ -85,15 +85,16 @@
 	 <h1><b>DO YOU WANT TO KNOW MORE?</b></h1>
       </div>
       <span id="myEmail">uxmal.c@gmail.com</span></br>
-	       
       <div class="emailttp">
-	 <button id="btnCopy">UXMAL.C@GMAIL.COM</button>
-	 <span class="copyToolTip">CLICK TO COPY</span>
+	 <button class="toolTipLink" id="btnCopy" onclick="emailCopied()" onmouseout="changeBack()">UXMAL.C@GMAIL.COM
+	    <span id="tooltip-span">Click to copy</span>
+	 </button>
       </div>
    </div>
 </div>
-<script>
 
+<script>
+   /* Email is copied to clipbpard when clicked */
    document.querySelector("#btnCopy").addEventListener('click', function() {
    var copyText = document.querySelector('#myEmail');
 
@@ -104,5 +105,18 @@
    var sucess = document.execCommand('copy');
    window.getSelection().removeRange(range);
    });
+
+   /*
+    * 'Click to copy' tool tip follows cursor 
+    */
+   var tooltip = document.getElementById('tooltip-span');
+
+   window.onmousemove = function(e) {
+      var x = e.clientX
+	  y = e.clientY;
+
+      tooltip.style.top = (y + 20) + 'px';
+      tooltip.style.left = (x + 20) + 'px';
+   }
 </script>
 {% endblock content %}

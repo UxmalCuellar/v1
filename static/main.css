@@ -180,9 +180,10 @@ div:hover .bar3 {
 .show {display: block;}
 
 
-/* Copyright 2017 Ian Lunn Design Limited */
-
-/* Bob */
+/* Copyright 2017 Ian Lunn Design Limited 
+ * BEGIN
+ * hvr-hob 
+ */
 @-webkit-keyframes hvr-bob {
   0% {
     -webkit-transform: translateY(-8px);
@@ -258,7 +259,9 @@ div:hover .bar3 {
   animation-direction: normal, alternate;
 }
 
-/* END hvr-bob */
+/* END
+ * hvr-bob 
+ */
 
 .sub-head {
    font-family: 'Fjalla One', sans-serif;
@@ -278,8 +281,8 @@ div:hover .bar3 {
    line-height: 57px;
    padding: 20px;
 }
-/* Eduction */
 
+/* Eduction */
 .edu .container  {
    padding-top: 50px;
    padding-bottom: 50px;
@@ -295,20 +298,8 @@ div:hover .bar3 {
    width: 90px;
    height: 90px;
    background-size: cover;
-   /*
-   opacity: 0.5;
-   filter: grayscale(100%);
-   -webkit-filter: grayscale(100%);
-
-*/
 }
 
-/*
-#wsu_logo:hover, #billyblue:hover {
-   filter: none;
-   filter: grayscale(0%);
-}
-*/
 .edu_logo {
    margin-left: auto;
    margin-right: auto;
@@ -383,6 +374,7 @@ div:hover .bar3 {
    color: white;
 }
 
+/* Contact */
 .contact {
    text-align: center;
 }

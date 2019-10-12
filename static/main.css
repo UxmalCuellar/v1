@@ -1,7 +1,25 @@
+:root {
+   --main-green: #00FF99;
+   --dgrey: #272D2D;
+   --main-purp: rgba(168, 70, 160, 0.8);
+   --lgrey: #50514F;
+}
+
 html, body {
    font-family: 'Rubik', sans-serif;
    min-height: 100% !important;
    height: 100%;
+}
+
+hr { 
+   border-width: 0.5px; 
+}
+
+.line-break {
+   color: #50514f;
+   padding: 0;
+   margin: 0;
+   border-width: 3px;
 }
 
 .title {
@@ -38,7 +56,7 @@ html, body {
 
 .name-title h1 {
    color: #000000;
-   text-shadow: 0px 1px 0px #00ff99, 1px 2px 0px #00ff99, 2px 3px 0px #00ff99, 3px 4px 0px #00ff99, 4px 5px 0px #00ff99, 5px 6px 0px #00ff99, 6px 7px 0px #00ff99;
+   text-shadow: 0px 1px 0px var(--main-green), 1px 2px 0px var(--main-green), 2px 3px 0px var(--main-green), 3px 4px 0px var(--main-green), 4px 5px 0px var(--main-green), 5px 6px 0px var(--main-green), 6px 7px 0px var(--main-green);
    transform: skew(-10deg);
    font-size: 80px;
    font-style: normal;
@@ -91,7 +109,7 @@ html, body {
 }
 
 .footer a:hover {
-   color: grey;
+   color: grey; 
 }
 
 /* icons */
@@ -147,15 +165,16 @@ div:hover .bar3 {
 }
 
 .dropdown-content a {
-   color: black;
+   color: white;
    padding: 12px 16px;
    text-decoration: none;
    display: block;
+   background: #272d2d;
 }
 
 .dropdown-content a:hover {
-   background-color: transparent;
-   border-left: 4px solid #00ff99;
+   background-color: #272d2d;
+   border-left: 4px solid var(--main-green);
 }
 
 .show {display: block;}
@@ -246,7 +265,7 @@ div:hover .bar3 {
    font-weight: bold;
    transform: skew(-10deg);
    font-size: 20px;
-   text-shadow: 0px 1px 0px #00ff99, 1px 2px 0px #00ff99, 2px 3px 0px #00ff99, 3px 4px 0px #00ff99;
+   text-shadow: 0px 1px 0px var(--main-green), 1px 2px 0px var(--main-green), 2px 3px 0px var(--main-green), 3px 4px 0px var(--main-green);
    -moz-osx-font-smoothing: grayscale;
    -webkit-font-smoothing: antialiased;
 }
@@ -320,8 +339,9 @@ div:hover .bar3 {
 
 .o1:before {
    border-radius: 50% ;
-   background-color: rgba(179, 102, 255, 0.7);
- }
+   /* background-color:  rgba(179, 102, 255, 0.7); */
+   background-color: var(--main-purp); 
+}
 
 .o2:before {
    background-color: rgba(0, 0, 255, 0.5);
@@ -345,21 +365,21 @@ div:hover .bar3 {
 
 #download {
    /*
-   border: 1px solid #00ff99;
+   border: 1px solid var(--main-green);
    */
    border: 1px solid #a4b8c4;
    color: #a4b8c4; 
    line-height: 1;
    display: inline-block;
    padding: 14px 16px;
-   border-radius: 7px;
+   border-radius: 0px;
    text-decoration: none;
    transition: all .2s linear;
 }
 
 #download:hover {
    border: 1px solid #ffffff;
-   background: #00ff99;
+   background: var(--main-green);
    color: white;
 }
 
@@ -368,14 +388,15 @@ div:hover .bar3 {
 }
 
 .contact h1 {
-   font-size: 30px;
+   font-size: 50px;
 }
 
 .contact button  {
    border: none;
-   font-size: 40px;
+   font-size: 70px;
    font-weight: bold;
    color: black;
+   padding-top: 30px;
 }
 
 #myEmail {
@@ -386,13 +407,25 @@ div:hover .bar3 {
    text-decoration: none;
    position: relative;
 }
+
 .toolTipLink span {
    display: none;
 }
+
 .toolTipLink:hover span {
    display: block;
    position: fixed;
    overflow: hidden;
    font-family: 'Rubik', sans-serif;
    font-size: 15px;
+   text-shadow: 0px 1px 0px var(--main-green), 1px 2px 0px var(--main-green);
 }
+
+#contact-icons {
+   padding: 50px;
+}
+
+.footer-icons {
+   padding: 0px 15px 0px 15px;
+}
+

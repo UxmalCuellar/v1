@@ -3,9 +3,16 @@
 {% block content %}
 <!-- Title page -->
 <div class="title">
-   <div class="name-title">
-      <h1><b>UXMAL CUELLAR</b></h1>
+   <div class="name-title" >
+      <span id="huh">Huh?</span>
+      <h1 id="myName" onclick="nameFacts()"><b>UXMAL CUELLAR</b></h1>
       <p>COMPUTER SCIENTIST GRADUATE</p>
+   </div>
+   <div id="say-my-name">
+      <h1>Uxmal</h1>
+      <p><br>oo-ks-mull</p>
+      <h2>Fun fact</h2>
+      <p>Uxmal is an ancient Maya city of the classical period located in present-day Mexico</p>
    </div>
 </div>
 <!-- About -->
@@ -126,4 +133,5 @@
       tooltip.style.left = (x + 20) + 'px';
    }
 </script>
+
 {% endblock content %}

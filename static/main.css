@@ -24,7 +24,9 @@ hr {
 
 .title {
    height: 100%;
+   position: relative;
 }
+
 
 .name-title {
    text-align: center;
@@ -64,12 +66,24 @@ hr {
    -moz-osx-font-smoothing: grayscale;
    -webkit-font-smoothing: antialiased;
 }
-
+.name-title h1:hover {
+   cursor: pointer;
+}
 .name-title p {
    font-size: 20px;
    transform: skew(-10deg);
 }
 
+#say-my-name {
+   background: var(--lgrey);
+   margin: 0;
+   width: 400px;
+   position: absolute;
+   transform: translate(-50%, -50%);
+   top: 50%;
+   left: 50%;
+   display: none;
+}
 /* navbar */
 .navbar { 
    position: fixed;

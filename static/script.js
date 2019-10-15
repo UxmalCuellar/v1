@@ -72,6 +72,18 @@ $(document).ready(function(){
   });
 });
 
+/*  
+ * show name facts 
+ */
+
+function nameFacts() {
+   var x = document.getElementById("say-my-name");
+   if (x.style.display === "block") {
+      x.style.display = "none";
+   } else { 
+      x.style.display = "block";
+   }
+}
 /* 
  * Update tooltip if email clicked and update tooltip
  */

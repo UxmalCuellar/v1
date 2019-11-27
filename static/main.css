@@ -11,9 +11,6 @@ html, body {
    height: 100%;
 }
 
-hr { 
-   border-width: 0.5px; 
-}
 
 .line-break {
    color: #50514f;
@@ -138,7 +135,7 @@ hr {
 }
 
 .footer a:hover {
-   color: grey; 
+   color: var(--main-green); 
 }
 
 /* icons */
@@ -359,8 +356,7 @@ div:hover .bar3 {
 
 .o1:before {
    border-radius: 50% ;
-   /* background-color:  rgba(179, 102, 255, 0.7); */
-   background-color: var(--main-purp); 
+   background-color: #FFC857D9 /* mustard */ 
 }
 
 .o2:before {
@@ -384,36 +380,64 @@ div:hover .bar3 {
 }
 
 #download {
-   /*
-   border: 1px solid var(--main-green);
-   */
-   font-weight: bold;
-   color: var(--lgrey); 
+   border: 2px solid var(--main-green);
+   color: var(--main-green); 
    line-height: 1;
    display: inline-block;
    padding: 14px 16px;
    text-decoration: none;
    transition: all .2s linear;
-   box-shadow: -5px 5px var(--lgrey);
-   background: var(--main-green);
+   background: none;
 }
 
 #download:hover {
    background: var(--main-green);
+   color: white;
    transform: translateY(3px);
 }
 
 #download:active { 
-   box-shadow: -2px 3px var(--lgrey);
-   transform: translateY(4px);
    transition: none;
   }
+/* Projects */
+#card {
+   background: var(--dgrey);
+   padding: 20px;
+   transition: .3s;
+}
+#card * {
+   color: white;
+}
+#card h1 {
+   font-size: 21px;
+   font-weight: bold;
+}
+#lang-tag {
+   font-family: 'PT Mono', monospace;
+   font-size: 12px;
+}
+#project-card {
+   padding: 0px 30px 30px 30px;
+}
+#card:hover {
+   transform: translateY(-4px);
+   transition: .5s;
+}
+#projects-link {
+   font-size: 20px; 
+   float: right;
+}
+#projects-link:hover {
+   transition: .5s;   
+   color: var(--main-green);
+}
 /* Contact */
 .contact {
    text-align: center;
 }
 
 .contact h1 {
+
    font-size: 50px;
 }
 

@@ -11,19 +11,10 @@ html, body {
    height: 100%;
 }
 
-
-.line-break {
-   color: #50514f;
-   padding: 0;
-   margin: 0;
-   border-width: 3px;
-}
-
 .title {
    height: 100%;
    position: relative;
 }
-
 
 .name-title {
    text-align: center;
@@ -63,6 +54,7 @@ html, body {
    -moz-osx-font-smoothing: grayscale;
    -webkit-font-smoothing: antialiased;
 }
+
 .name-title h1:hover {
    cursor: pointer;
 }
@@ -87,14 +79,26 @@ html, body {
 }
 
 #say-my-name {
-   background: var(--lgrey);
-   margin: 0;
-   width: 400px;
-   position: absolute;
-   transform: translate(-50%, -50%);
-   top: 50%;
-   left: 50%;
+   background: var(--dgrey);
+   padding: 20px;
+   width: 30%;
+   position: relative;
+   top: 60%;
+   margin: auto;
+   color: white;
+   text-align: center;
+   line-height: 10px;
+   font-size: 21px;
    display: none;
+}
+
+#say-my-name h1 {
+   font-size: 21px;
+   color: var(--main-green);
+}
+
+#pronounce {
+   font-size: 30px;
 }
 /* navbar */
 .navbar { 

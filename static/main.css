@@ -133,7 +133,6 @@ html, body {
 }
 
 .goto-top p {
-   border-left: 2px solid black;
    padding: 4px;
    cursor: pointer;
    transform: translateX(-50%) rotate(-10deg);
@@ -461,7 +460,6 @@ div:hover .bar3 {
 }
 
 .contact h1 {
-
    font-size: 50px;
 }
 

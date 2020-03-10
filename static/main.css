@@ -3,6 +3,7 @@
    --dgrey: #272D2D;
    --main-purp: rgba(168, 70, 160, 0.8);
    --lgrey: #50514F;
+   --mustard: #FFC857D9;
 }
 
 html, body {
@@ -179,13 +180,7 @@ html, body {
    margin: 6px 0;
    transition: 0.4s;
 }
-/*
-div:hover .bar1, 
-div:hover .bar2,
-div:hover .bar3 {
-   background-color: grey;
-}
-*/
+
 .change .bar1 {
   -webkit-transform: rotate(-45deg) translate(-9px, 6px);
   transform: rotate(-45deg) translate(-9px, 6px);
@@ -439,6 +434,7 @@ div:hover .bar3 {
 }
 #project-card {
    padding: 0px 30px 30px 30px;
+   display: flex;
 }
 #card:hover {
    transform: translateY(-4px);
@@ -542,13 +538,11 @@ div:hover .bar3 {
 }
 
 #footer {
-   background: var(--dgrey);
-   height: 70px;
-   width: 100%;
+   height: 100px;
    margin: 0 auto;
    padding: 0;
    z-index: -1;
-   border-radius: 6px 6px 0 0;
+   border-top: 1px solid lightgray;
 }
 
 #footer-content { 

@@ -546,9 +546,10 @@ html, body {
 }
 
 #footer-content { 
-   color: white;
+   color: lightgrey; 
    font-size: 16px;
    z-index: 1;
    text-align: center;
+   margin: auto;
    padding: 20px 20px 0 20px;
  }

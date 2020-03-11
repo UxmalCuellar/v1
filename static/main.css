@@ -494,6 +494,10 @@ html, body {
 /* Larger than mobile */
 
 @media (max-width: 400px) {
+   #aboutme {
+      font-size: 35px;
+      line-height: normal;
+   }
    
    #btnCopy {
       font-size: 40px;
@@ -504,6 +508,10 @@ html, body {
    
 }
 @media (min-width: 400px) {
+   #aboutme {
+      font-size: 35px;
+      line-height: normal;
+   }
    #btnCopy {
       font-size: 40px;
    }

@@ -409,7 +409,7 @@ html, body {
 #download:hover {
    background: var(--main-green);
    color: white;
-   transform: translateY(3px);
+   transform: translateY(-3px);
 }
 
 #download:active { 
@@ -433,8 +433,7 @@ html, body {
    font-size: 12px;
 }
 #project-card {
-   padding: 0px 30px 30px 30px;
-   display: flex;
+   padding: 15px 30px 15px 30px;
 }
 #card:hover {
    transform: translateY(-4px);
@@ -552,4 +551,25 @@ html, body {
    text-align: center;
    margin: auto;
    padding: 20px 20px 0 20px;
+ }
+
+#chat a {
+    background: var(--mustard);
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px;
+   transition: .3s;
+ }
+
+#chat a:hover {
+    border: 2px solid var(--mustard);
+   background: transparent;
+   color: var(--mustard);
+   transform: translateY(3px);
+ }
+#chat {
+    font-family: 'Rubik', sans-serif;
+    padding-top: 50px;
  }

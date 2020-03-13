@@ -396,19 +396,20 @@ html, body {
 }
 
 #download {
-   border: 2px solid var(--main-green);
-   color: var(--main-green); 
+   color: white; 
    line-height: 1;
    display: inline-block;
    padding: 14px 16px;
    text-decoration: none;
+   font-weight: bold;
    transition: all .2s linear;
-   background: none;
+   background: var(--dgrey);
 }
 
 #download:hover {
-   background: var(--main-green);
-   color: white;
+   /* background: var(--main-green); */
+   /* color: var(--main-green); */
+   font-weight: bold;
    transform: translateY(-3px);
 }
 
@@ -508,10 +509,10 @@ html, body {
    
 }
 @media (min-width: 400px) {
-   #aboutme {
+   /* #aboutme {
       font-size: 35px;
       line-height: normal;
-   }
+   } */
    #btnCopy {
       font-size: 40px;
    }

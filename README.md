@@ -5,7 +5,7 @@
   <a href="https://uxmalcuellar.com" target="_blank">uxmalcuellar.com</a> designed and built using Flask.
 </p>
 
-![home](https://github.com/UxmalCuellar/v1/static/images/home.png)
+![home](https://github.com/UxmalCuellar/v1/blob/master/static/images/home.png)
 
 # Setting up environment
 Assumed that `virtualenv` and `git` is installed

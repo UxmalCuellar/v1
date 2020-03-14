@@ -1,9 +1,8 @@
 :root {
    --main-green: #00FF99;
    --dgrey: #272D2D;
-   --main-purp: rgba(168, 70, 160, 0.8);
    --lgrey: #50514F;
-   --mustard: #FFC857D9;
+   --mustard: #FFC857;
 }
 
 html, body {
@@ -103,16 +102,6 @@ html, body {
    cursor: pointer;
 }
 
-/*
-.name-title:hover span {
-   display: block;
-   text-decoration: none;
-   position: fixed;
-   overflow: hidden;
-   font-family: 'Rubik', sans-serif;
-   font-size: 15px;
-}
-*/
 .name-title p {
    font-size: 20px;
    transform: skew(-10deg);
@@ -384,7 +373,7 @@ html, body {
 }
 
 #billyblue {
-   background-image: url("/static/images/billyblue_logo.jpg");
+   background-image: url("/static/images/billyblue_logo.png");
 }
 
 #btnCv {

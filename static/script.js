@@ -6,22 +6,6 @@ function toggleMenuIcon(x) {
    document.getElementById("menu").classList.toggle("show");
 }
 
-/*
-// close dropdown menu if user clicks outside if it
-window.onclick = function(event) {
-   if (!event.target.matches('.toc-holder')) {
-      var dropdowns = document.getElementByClassName("dropdown-content");
-      var i;
-      for (i = 0; i < dropdowns.length; i++) {
-	 var openDropDown = dropdowns[i];
-	 if (openDropDown.classList.contains('show')) {
-	    openDropDown.classList.remove('show');
-	 }
-      }
-   }
-}
-*/
-
 /* 
  * Show icons if at the top of the page or bottom else fade out
  */
@@ -81,18 +65,3 @@ $(document).ready(function () {
       $('#say-my-name').delay(3500).fadeOut();
    });
 });
-
-/* 
- * Update tooltip if email clicked and update tooltip
- */
-
-function emailCopied() {
-   document.getElementById('tooltip-span').innerHTML = "Copied to clipboard!!";
-}
-
-/* 
- * If cursor moved and returned to email 
- */
-function changeBack() {
-   document.getElementById('tooltip-span').innerHTML = "Click to copy";
-}

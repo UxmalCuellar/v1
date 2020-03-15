@@ -50,7 +50,6 @@ html, body {
    margin: 0 auto;
    position: absolute;
    visibility: hidden;
-   font-family: 'Rubik', sans-serif;
    font-size: 15px;
    border-bottom: 2px dotted var(--dgrey);
 }
@@ -96,6 +95,7 @@ html, body {
    font-weight: normal;
    -moz-osx-font-smoothing: grayscale;
    -webkit-font-smoothing: antialiased;
+   margin: 0;
 }
 
 .name-title:hover {
@@ -103,6 +103,7 @@ html, body {
 }
 
 .name-title p {
+   margin: 0;
    font-size: 20px;
    transform: skew(-10deg);
 }
@@ -307,7 +308,6 @@ html, body {
 /* About */
 #aboutme {
    font-size: 50px;
-   font-family: 'Rubik', sans-serif;
    font-weight: bold;
    line-height: 57px;
    padding: 20px;
@@ -406,26 +406,21 @@ html, body {
    transition: none;
   }
 /* Projects */
-#card {
+.card {
    background: var(--dgrey);
    padding: 20px;
    transition: .3s;
-}
-#card * {
    color: white;
 }
-#card h1 {
+.card h1 {
    font-size: 21px;
    font-weight: bold;
 }
-#lang-tag {
+.language{
    font-family: 'PT Mono', monospace;
    font-size: 12px;
 }
-#project-card {
-   padding: 15px 30px 15px 30px;
-}
-#card:hover {
+.card:hover {
    transform: translateY(-4px);
    transition: .5s;
 }
@@ -436,6 +431,9 @@ html, body {
 #projects-link:hover {
    transition: .5s;   
    color: var(--main-green);
+}
+.project-card {
+   padding-bottom: 20px;
 }
 /* Contact */
 .contact {
@@ -473,9 +471,7 @@ html, body {
    display: block;
    position: fixed;
    overflow: hidden;
-   font-family: 'Rubik', sans-serif;
    font-size: 15px;
-   /*text-shadow: 0px 1px 0px var(--main-green), 1px 2px 0px var(--main-green);*/
    text-shadow: 0px 1px 0px #FFC857D9, 1px 2px 0px #FFC857D9;
 
 }
@@ -488,7 +484,6 @@ html, body {
       font-size: 35px;
       line-height: normal;
    }
-   
    #btnCopy {
       font-size: 40px;
    }
@@ -508,11 +503,22 @@ html, body {
    #contact-icons {
       font-size: 30px;
    }
-   
+   .card {
+      margin-bottom: 20px;
+   }
+   .project-card {
+      padding: 0px;
+   }
 }
 
 /* Larger than phablet */
 @media (min-width: 550px) {
+   .project-card {
+      padding-bottom: 20px;
+   }
+   .card {
+      margin-bottom: 0px;
+   }
    #btnCopy {
       font-size: 50px;
    }
@@ -543,8 +549,8 @@ html, body {
 }
 
 #footer-content { 
-   color: lightgrey; 
-   font-size: 16px;
+   color: grey; 
+   font-size: 14px;
    z-index: 1;
    text-align: center;
    margin: auto;
@@ -568,6 +574,5 @@ html, body {
    transform: translateY(3px);
  }
 #chat {
-    font-family: 'Rubik', sans-serif;
     padding-top: 50px;
  }

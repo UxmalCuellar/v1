@@ -14,10 +14,7 @@ $(window).scroll(function () {
       $('.icons').fadeOut();
    } else {
       $('.icons').fadeIn();
-   }/*
-   if($(window).scrollTop() + $(window).height() == $(document).height()) {
-      $('.icons').fadeIn();
-   }*/
+   }
 });
 
 /*

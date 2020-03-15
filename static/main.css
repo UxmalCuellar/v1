@@ -493,10 +493,10 @@ html, body {
    
 }
 @media (min-width: 400px) {
-   /* #aboutme {
+   #aboutme {
       font-size: 35px;
       line-height: normal;
-   } */
+   }
    #btnCopy {
       font-size: 40px;
    }
@@ -525,6 +525,9 @@ html, body {
    
    #contact-icons {
       position: static;
+      font-size: 50px;
+   }
+   #aboutme {
       font-size: 50px;
    }
 }

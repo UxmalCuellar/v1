@@ -147,9 +147,6 @@ html, body {
    color: black;
 }
 
-.footer a:hover {
-   color: var(--main-green); 
-}
 
 /* icons */
 .icons {

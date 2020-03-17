@@ -1,7 +1,6 @@
 :root {
    --main-green: #00FF99;
    --dgrey: #272D2D;
-   --lgrey: #50514F;
    --mustard: #FFC857;
 }
 
@@ -369,11 +368,11 @@ html, body {
  }
 
 #wsu_logo {
-   background-image: url("/static/images/WSU_logo.png");
+   background-image: url("/static/images/WSU_logo.webp");
 }
 
 #billyblue {
-   background-image: url("/static/images/billyblue_logo.png");
+   background-image: url("/static/images/billyblue_logo.webp");
 }
 
 #btnCv {
@@ -405,6 +404,7 @@ html, body {
 #download:active { 
    transition: none;
   }
+
 /* Projects */
 .card {
    background: var(--dgrey);
@@ -412,28 +412,37 @@ html, body {
    transition: .3s;
    color: white;
 }
+
 .card h1 {
    font-size: 21px;
    font-weight: bold;
 }
+
 .language{
    font-family: 'PT Mono', monospace;
    font-size: 12px;
 }
+
 .card:hover {
    transform: translateY(-4px);
    transition: .5s;
 }
+
 #projects-link {
-   font-size: 20px; 
    float: right;
 }
-#projects-link:hover {
-   transition: .5s;   
-   color: var(--main-green);
-}
+
 .project-card {
    padding-bottom: 20px;
+}
+
+.projects-logos {
+   width: 24px;
+}
+
+.projects-logos:hover {
+   width: 27px;
+   transition: .3s;   
 }
 /* Contact */
 .contact {
@@ -446,35 +455,6 @@ html, body {
    font-size: 50px;
 }
 
-.contact button  {
-   border: none;
-   font-size: 70px;
-   font-weight: bold;
-   color: black;
-   padding-top: 30px;
-}
-
-#myEmail {
-   opacity: 0;
-}
-
-.toolTipLink { 
-   text-decoration: none;
-   position: relative;
-}
-
-.toolTipLink span {
-   display: none;
-}
-
-.toolTipLink:hover span {
-   display: block;
-   position: fixed;
-   overflow: hidden;
-   font-size: 15px;
-   text-shadow: 0px 1px 0px #FFC857D9, 1px 2px 0px #FFC857D9;
-
-}
 /* Mobile first queries */
 
 /* Larger than mobile */
@@ -561,21 +541,21 @@ html, body {
  }
 
 #chat a {
-    background: var(--mustard);
-    color: white;
-    font-size: 25px;
-    font-weight: bold;
-    text-decoration: none;
-    padding: 10px;
+   background: var(--mustard);
+   color: white;
+   font-size: 25px;
+   font-weight: bold;
+   text-decoration: none;
+   padding: 10px;
    transition: .3s;
  }
 
 #chat a:hover {
-    border: 2px solid var(--mustard);
+   border: 2px solid var(--mustard);
    background: transparent;
    color: var(--mustard);
    transform: translateY(3px);
  }
 #chat {
-    padding-top: 50px;
+    padding-top: 35px;
  }

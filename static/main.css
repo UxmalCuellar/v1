@@ -14,6 +14,9 @@ html, body {
    height: 100%;
    position: relative;
 }
+#myName {
+   padding-bottom: 30px;
+}
 
 #say-my-name {
    background: var(--dgrey);
@@ -310,6 +313,7 @@ html, body {
    font-weight: bold;
    line-height: 57px;
    padding: 20px;
+   margin: 0px;
 }
 
 /* Eduction */

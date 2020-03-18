@@ -484,6 +484,8 @@ html, body {
    }
    #contact-icons {
       font-size: 30px;
+      display: flex;
+      justify-content: space-between;
    }
    .card {
       margin-bottom: 20px;

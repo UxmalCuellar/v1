@@ -471,6 +471,8 @@ html, body {
    }
    #contact-icons {
       font-size: 30px;
+      padding: 50px 12.5% 50px 12.5%;
+      width: 75%;
    }
    
 }
@@ -520,11 +522,12 @@ html, body {
 }
 
 #contact-icons {
-   padding: 50px;
+   padding: 50px 30% 50px 30%;
+   width: 40%;
 }
 
 .footer-icons {
-   padding: 0px 15px 0px 15px;
+   padding: 10px 10px 10px 10px;
 }
 
 #footer {
